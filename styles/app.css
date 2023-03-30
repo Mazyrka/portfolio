@@ -167,20 +167,17 @@ body {
   right: 33px;
 }
 
-.cogwheel {
-  width: 12rem;
-  position: relative;
-  animation: spin 10s linear infinite;
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
 .grandimg {
   border-radius: 1.7rem;
   height: 25rem;
   padding-bottom: 4rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.spline-image {
+  width: 20rem;
 }
 
 .about-container_textside {
@@ -503,6 +500,10 @@ body {
   }
   .about-container_image {
     margin: 0 auto 0 auto;
+    width: auto;
+    height: auto;
+  }
+  .spline-image {
     width: auto;
     height: auto;
   }

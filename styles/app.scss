@@ -180,28 +180,18 @@ body {
     right: 33px; 
 }
 
-.cogwheel {
-    width: 12rem;
-    position: relative;
-    -webkit-animation: spin 10s linear infinite;
-    -moz-animation: spin 10s linear infinite;
-    animation: spin 10s linear infinite;
-}
-
-@-webkit-keyframes spin{
-    100%{-webkit-transform: rotate(360deg);}
-}
-@-moz-keyframes spin{
-    100%{-webkit-transform: rotate(360deg);}
-}
-@keyframes spin{
-    100%{-webkit-transform: rotate(360deg);}
-}
-
 .grandimg {
     border-radius: 1.7rem;
     height: 25rem;
-    padding-bottom: 4rem;    
+    padding-bottom: 4rem;  
+    width: auto; 
+    display: flex; 
+    justify-content: center;
+}
+
+.spline-image {
+    width: 20rem
+    
 }
 
 .about-container_textside {
@@ -539,6 +529,12 @@ body {
         width: auto;
         height: auto;
     }
+
+    .spline-image {
+        width: auto;
+        height: auto;
+    }
+
     .about-container_textside {
         padding: 0 2rem ;
         text-align: center;
