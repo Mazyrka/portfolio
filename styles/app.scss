@@ -522,6 +522,9 @@ body {
     }
     
     //-------------------------------------------media__about
+    #about {
+        padding-top: 5rem;
+    }
 
     .about-container {
         display: flex;
@@ -603,7 +606,9 @@ body {
     border-radius: 1.7rem;
     margin: 3rem;
    }
-
+   .icon-image_box {
+    padding: 1rem 0;
+   }
    .contact-container_text {
     height: auto;
    }
@@ -615,13 +620,13 @@ body {
    }
    .secondary-container {
     flex-direction: column-reverse;
-    gap: 2rem;
+    gap: 0;
    }
    .secondary-container_information {
     flex-direction: column-reverse;
     justify-content: center;
     text-align: center;
-    gap: 1rem;
+    gap: 0;
    }
    .secondary-container_text {
     text-align: center;
