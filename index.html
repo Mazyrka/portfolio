@@ -70,17 +70,14 @@
     </div>
   </div> 
   </section>
-
 <!---------------------------------------------------------------------------------------------about-->
  <section id="about">
   <div class="about-container">
     <div class="about-container_image">
       <div class="grandimg" >
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.278/build/spline-viewer.js"></script>
-        <spline-viewer class="spline-image" url="https://prod.spline.design/xk8WpYUoiaGaHbdH/scene.splinecode"></spline-viewer>
+        <canvas id="globe3d"></canvas>
       </div>
     </div>
-    
     <div class="about-container_textside">
       <h4 class="about-container_header">About me</h4>
       <h3 class="about-container_location">A dedicated Front-end Developer <br>
@@ -93,14 +90,12 @@
     </div>
   </div>
  </section>
-
  <!-------------------------------------------------------------------------------------------projects-->
  <section id="projects">
     <div class="projects-container">
       <h3 class="project-container_logo">Portfolio</h3>
       <h2 class="project-container_name_about">Each project is a unique piece of development 🧩</h2>
 
-      
       <div class="project-container__example">
         <div class="example-image"><img class="project-viue_img" src="/img/13724180582829.jpg" alt=""></div>
         <div class="example-text">
@@ -171,7 +166,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
   <!------------------------------------------------------------------------------------------contact-->
@@ -203,7 +197,7 @@
     </div>
      </div>
   </section>
-
+<!-------------------------------------------------------------------------------------------footer-->
   <section id="footer">
    <footer class="conatiner-footer">
     <div class="copyright-container">
@@ -214,6 +208,16 @@
     </div>
    </footer>
   </section> 
+<!-------------------------------------------------------------------------------------------globe3d-->
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.280/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="globe.js"></script>
 </body>
 </html>
 

@@ -176,6 +176,11 @@ body {
   justify-content: center;
 }
 
+#globe3d {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .spline-image {
   width: 20rem;
 }

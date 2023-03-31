@@ -1,4 +1,3 @@
-
 var typingEffect = new Typed(".home_page-typing",{
     strings : ["Developer", "Psychologist", "Adventurer"],
     loop : true,
