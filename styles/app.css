@@ -77,7 +77,7 @@ body {
 .home_page_image-container {
   height: 25rem;
   width: 25rem;
-  background-image: url(/img/photo_2022-11-10_17-48-04.jpg);
+  background-image: url(../img/photo_2022-11-10_17-48-04.jpg);
   background-size: cover;
   background-position: center center;
   box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
