@@ -293,17 +293,22 @@ body {
     margin-top: 3rem;
 }
 
+
 .example-image {
     border-radius: 1.7rem;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     height: 20rem;
     overflow: hidden;
     width: 35rem;
+    background-image: url(../img/13724180582829.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
 .project-viue_img {
     width: 100%;
-    height: auto;
+    height: auto;  
 }
 
 .example-text {
