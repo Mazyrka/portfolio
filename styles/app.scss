@@ -24,10 +24,37 @@ body {
     background: #0D6EFD; 
   }
 
+  
+//---------------------------------------------------------------navbar
+.navbar-brand_mstyle {
+    color: #0D6EFD;
+    font-family: 'Poppins', sans-serif;  
+}
+
+.btn_container {
+    display: flex;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.navbar__btn{
+    width: 2rem;
+    border-radius: 20%;
+    background-color: #0D6EFD;
+    font-size: small;
+    color: #fff;
+    border-color: #f9f9f9;
+
+}
+
+.navbar__btn:hover {
+    background-color: #767676;
+}
 //-------------------------------------homepage
 
  #home {
     background-color: #f9f9f9;
+    padding-top: 2rem;
     padding-bottom: 8rem;
     font-family: 'Poppins', sans-serif;
     width: auto;
@@ -54,10 +81,10 @@ body {
 }
 
 .home_page-text {
-   font-size: 4.2rem;
-   margin-bottom: 3rem;
+   margin-bottom: 1rem;
    margin-top: 3rem;
-   font-weight: 900;
+   font-size: 4.2rem;
+   font-weight: 700;
    text-align: left; 
 }
 
@@ -100,9 +127,10 @@ body {
     }
 }
 
-.navbar-brand_mstyle {
-    color: #0D6EFD;
-    font-family: 'Poppins', sans-serif;  
+.typing-effect-container {
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-align: left; 
 }
 
 .home_page-typing {
@@ -486,14 +514,17 @@ body {
         margin: 0 auto 0 auto;
         padding: 0 2rem;
     }
+    .typing-effect-container {
+        text-align: center;
+    }
     .home_page-typing {
         font-size: 3rem;
     }
     .home_page-text {
        font-size: 3.5rem;
-       margin-bottom: 3rem;
+       margin-bottom: 1rem;
        margin-top: 3rem;
-       font-weight: 900;
+       font-weight: 700;
        text-align: center; 
     } 
     .home_page-paragraph {

@@ -11,7 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/app.css">
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/e98d48c70e.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -27,23 +26,28 @@
   <div class="nav_contaier">
     <nav class="navbar navbar-expand-lg fixed-top py-3 px-5 bg-white">
       <a class="navbar-brand" href="#"> <span class="navbar-brand_mstyle">M</span>.development</a>
+      <div class="btn_container">
+        <button class="navbar__btn navbar__btn-ru " data-btn="ru">RU</button>
+        <button class="navbar__btn navbar__btn-active" data-btn="en">EN</button>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home" data-lang="navbar-home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
+            <a class="nav-link active" href="#about" data-lang="navbar-about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#projects">Projects</a>
+            <a class="nav-link active" href="#projects" data-lang="navbar-project">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#contact">Contact</a>
+            <a class="nav-link active" href="#contact" data-lang="navbar-contact">Contact</a>
           </li>
+          
         </ul>
       </div>
    </nav>
@@ -53,10 +57,10 @@
   <div class="home-box">
     <div class="home_page">
       <div class=" home_page_text-conatiner">
-      <h1 class="home_page-text">
-        Hi, my name is Makar! i'm a <br>
-        <span class="home_page-typing"></span></h1>
-        <p class="home_page-paragraph">A passionate Front-end Developer based in Istanbul, Turkey 📍</p>
+      <h1 class="home_page-text" data-lang="home-header">
+        Hi, my name is Makar! i'm a <br></h1>
+        <h1 class="typing-effect-container"><span class="home_page-typing"></span></h1>
+        <p class="home_page-paragraph" data-lang="home-paragraph">A passionate Front-end Developer based in Istanbul, Turkey 📍</p>
       </div>
     <div class="home_page_image-container"><img src="" alt=""></div>  
     </div>
@@ -83,10 +87,10 @@
       </div>
     </div>
     <div class="about-container_textside">
-      <h4 class="about-container_header">About me</h4>
-      <h3 class="about-container_location">A dedicated Front-end Developer <br>
+      <h4 class="about-container_header" data-lang="about">About me</h4>
+      <h3 class="about-container_location" data-lang="about-location">A dedicated Front-end Developer <br>
         based in Turkey, Istanbul 📍</h3>
-      <p class="about-container_information">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, 
+      <p class="about-container_information" data-lang="about-info">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, 
         JavaScript, React and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user 
         experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing 
         cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams 
@@ -96,14 +100,14 @@
  </section>
  <section id="projects">
     <div class="projects-container">
-      <h3 class="project-container_logo">Portfolio</h3>
-      <h2 class="project-container_name_about">Each project is a unique piece of development 🧩</h2>
+      <h3 class="project-container_logo" data-lang="portfolio">Portfolio</h3>
+      <h2 class="project-container_name_about" data-lang="project-about">Each project is a unique piece of development 🧩</h2>
 
       <div class="project-container__example">
         <div class="example-image"><img class="project-viue_img" src="./img/13724180582829.jpg" alt=""></div>
         <div class="example-text">
-          <h2 class="example-text_logo">Car rental 🚗</h2>
-          <p class="example-text_paragraph">A car rental website is an online platform that allows users to rent cars for
+          <h2 class="example-text_logo" data-lang="project-logo-car-rental-1">Car rental 🚗</h2>
+          <p class="example-text_paragraph" data-lang="project-text-car-rental-1">A car rental website is an online platform that allows users to rent cars for
              personal or business use. The website provides an interface for searching, comparing, and reserving cars.</p>
           <div class="example-text_tools">
             <p class="example-text_tools_name">REACT</p>
@@ -120,8 +124,8 @@
       <div class="project-container__example-reverse">
         <div class="example-image"><img class="project-viue_img" src="./img/13724180582829.jpg" alt=""></div>
         <div class="example-text">
-          <h2 class="example-text_logo">Car rental 🚗</h2>
-          <p class="example-text_paragraph">A car rental website is an online platform that allows users to rent cars for
+          <h2 class="example-text_logo" data-lang="project-logo-car-rental-2">Car rental 🚗</h2>
+          <p class="example-text_paragraph" data-lang="project-text-car-rental-2">A car rental website is an online platform that allows users to rent cars for
              personal or business use. The website provides an interface for searching, comparing, and reserving cars.</p>
           <div class="example-text_tools">
             <p class="example-text_tools_name">REACT</p>
@@ -138,8 +142,8 @@
       <div class="project-container__example">
         <div class="example-image"><img class="project-viue_img" src="./img/13724180582829.jpg" alt=""></div>
         <div class="example-text">
-          <h2 class="example-text_logo">Car rental 🚗</h2>
-          <p class="example-text_paragraph">A car rental website is an online platform that allows users to rent cars for
+          <h2 class="example-text_logo" data-lang="project-logo-car-rental-3">Car rental 🚗</h2>
+          <p class="example-text_paragraph" data-lang="project-text-car-rental-3">A car rental website is an online platform that allows users to rent cars for
              personal or business use. The website provides an interface for searching, comparing, and reserving cars.</p>
           <div class="example-text_tools">
             <p class="example-text_tools_name">REACT</p>
@@ -156,8 +160,8 @@
       <div class="project-container__example-reverse">
         <div class="example-image"><img class="project-viue_img" src="./img/13724180582829.jpg" alt=""></div>
         <div class="example-text">
-          <h2 class="example-text_logo">Car rental 🚗</h2>
-          <p class="example-text_paragraph">A car rental website is an online platform that allows users to rent cars for
+          <h2 class="example-text_logo" data-lang="project-logo-car-rental-4">Car rental 🚗</h2>
+          <p class="example-text_paragraph" data-lang="project-text-car-rental-4">A car rental website is an online platform that allows users to rent cars for
              personal or business use. The website provides an interface for searching, comparing, and reserving cars.</p>
           <div class="example-text_tools">
             <p class="example-text_tools_name">REACT</p>
@@ -169,21 +173,23 @@
           </div>
         </div>
       </div>
+
+
     </div>
   </section>
   <section id="contact">
    <div class="contact-container">
       <div class="cantact-container_text">
-        <p class="contact-container_text-logo">contact</p>
-        <h3 class="contact-container_text-simpletext">Don't be shy hit me up</h3>
+        <p class="contact-container_text-logo" data-lang="contact">contacts</p>
+        <h3 class="contact-container_text-simpletext" data-lang="simpletext">Don't be shy hit me up</h3>
       </div>
     <div class="secondary-container">
       <div class="contact-container_icon location">
         <div class="secondary-container_information">
          <span class="icon-image_box"><i class=" icon contact-icon fa-solid fa-map-location-dot"></i></span>
         <div class="secondary-container_text">
-          <h3 class="icon-container_header">Location</h3>
-          <a class="icon-container_paragraph" href="#about">Istanbul, Turkey</a>
+          <h3 class="icon-container_header" data-lang="contact-location-text">Location</h3>
+          <a class="icon-container_paragraph" href="#about" data-lang="contact-location">Istanbul, Turkey</a>
         </div>
         </div>
       </div>
@@ -208,7 +214,12 @@
       <div class="container-footer_social">icon1 icon2</div>
     </div>
    </footer>
-  </section> 
+  </section>
+
+
+  <script src="lang.js"></script>
+  <script src="app.js"></script>
+
   <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
     <script type="importmap">
       {
